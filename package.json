@@ -26,11 +26,11 @@
   },
   "scripts": {
     "prepublishOnly": "npm run build && git add . && git commit -m \"publish new version\" && npm version patch && git push",
-    "build": "git pull && npm update -f && npm run analyze && npm exec webpack --env production",
-    "start": "npm run analyze && npm exec webpack-dev-server --env development --open",
-    "analyze": "npm exec polymer analyze > analysis.json",
-    "test": "npm exec polymer test",
-    "test:p": "npm exec polymer test -p --config-file=wct.p.conf.js"
+    "build": "git pull && npm update -f && npm run analyze && npm exec webpack -- --env production",
+    "start": "npm run analyze && npm exec webpack-dev-server -- --env development --open",
+    "analyze": "npm exec polymer -- analyze > analysis.json",
+    "test": "npm exec polymer -- test",
+    "test:p": "npm exec polymer -- test -p --config-file=wct.p.conf.js"
   },
   "license": "MIT",
   "dependencies": {
