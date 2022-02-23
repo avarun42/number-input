@@ -15,10 +15,11 @@
     "url": "https://github.com/avarun42/number-input.git"
   },
   "homepage": "https://github.com/avarun42/number-input/",
-  "name": "@fooloomanzoo/number-input",
+  "name": "@avarun42/number-input",
   "version": "3.0.10",
+  "author": "Varun Arora <avarun42>",
   "authors": [
-    "Johannes Brautzsch <fooloomanzoo>"
+    "Varun Arora <avarun42>"
   ],
   "directories": {
     "test": "test"
@@ -66,7 +67,6 @@
     "webpack-dev-server": "^3.1.10",
     "webpack-merge": "^4.1.4"
   },
-  "author": "Johannes Brautzsch <fooloomanzoo>",
   "module": "./number-input.js",
   "exports": {
     ".": "./number-input.js"
