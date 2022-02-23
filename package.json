@@ -12,10 +12,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/avarun42/number-input.git"
+    "url": "https://github.com/avarun42/number-input-component.git"
   },
-  "homepage": "https://github.com/avarun42/number-input/",
-  "name": "@avarun42/number-input",
+  "homepage": "https://github.com/avarun42/number-input-component",
+  "name": "number-input-component",
   "version": "3.0.10",
   "author": "Varun Arora <avarun42>",
   "authors": [
