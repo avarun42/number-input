@@ -4,7 +4,7 @@ const { resolve, join } = require('path');
 const merge = require('webpack-merge');
 const TerserWebpackPlugin = require('terser-webpack-plugin');
 
-const OUTPUT_PATH = resolve('demo', 'dist');
+const OUTPUT_PATH = resolve('dist');
 const ENV = process.argv.find(arg => arg.includes('production'))
   ? 'production'
   : 'development';
@@ -12,12 +12,11 @@ const ENV = process.argv.find(arg => arg.includes('production'))
 const commonConfig = merge([
   {
     entry: {
-      'demo-form-import': './demo/import/demo-form-import.js',
-      'demo-index-import': './demo/import/demo-index-import.js'
+      'number-input': './number-input.js',
     },
     output: {
       path: OUTPUT_PATH,
-      publicPath: '/demo/dist/',
+      publicPath: '/dist/',
       filename: '[name].js'
     },
     module: {
